@@ -3,14 +3,23 @@
     --siteGray:#F7F7F7;
     --siteParg:#738182;
     --siteDgray:#F4F4F4;
+    --darkgray:#748082;
 }
 
 html{
     font-family: 'Montserrat','Poppins', sans-serif;
 }
 
+.container{
+    width:100%;
+}
+
 .ff-mont{
     font-family:'Montserrat', sans-serif;
+}
+
+.text-dGray{
+    color:var(--darkgray);
 }
 
 .bg-dSite{
@@ -19,6 +28,13 @@ html{
 
 .fs-8{
     font-size:.8rem;
+}
+
+.text-site{
+    color:var(--siteDark);
+}
+.text-gray{
+    color:var(--siteParg);
 }
 
 /* Nav Section */
@@ -75,8 +91,66 @@ nav{
 
     /* Home Section */
 
+    /* About section */
+    .aboutImage{
+        width:80%;
+        margin:auto;
+    }
+    .aboutImage::before{
+        content: "";
+        /* width:6%; */
+        width:30px;
+        height:80%;
+        background-image: url("../img/dots.png");
+        position: absolute;
+        /* left:-7%; */
+        left:-35px;
+        top:22%;
+    }
+
+    .aboutImage::after{
+        content: "";
+        width:85%;
+        height: 30px;
+        /* height:6%; */
+        background-image: url("../img/dots.png");
+        position: absolute;
+        /* left:-7%; */
+        left:-35px;
+        top:102%;
+    }
+    .progress {
+        --bs-progress-height: 1.5rem;
+    }
+    .progress-bar{
+        background-color: var(--siteDark);
+        animation-fill-mode: forwards;
+        animation-duration: .1s;
+        animation-delay: .5s;
+    }
+
+    .progress1{
+        animation-name:WebPercentage;
+    }
+    .progress2{
+        animation-name:BRANDAnimation ;
+    }
+    .progress3{
+        animation-name:Development ;
+    }
+
+
+
+
+
+ 
+
 
 @media screen and (min-width: 768px){
+
+    .parent{
+        width:95%;
+       }
 
     /* Nav Section */
     .navbar-expand-lg .navbar-toggler {
@@ -106,16 +180,32 @@ nav{
       }
 
   /* Nav Section */
-
+ 
+    .aboutImage{
+            width:90%;
+                }
       
 }
 
 
 @media screen and (min-width: 992px){
+
+   .parent{
+    width:90%;
+   }
     /* Nav Section */
     .nav-item{
         padding:1.2rem;
 }
+        .aboutImage{
+            width:100%;
+                }
     /* Nav Section */
 
+}
+
+@media screen and (min-width: 1200px){
+    .parent{
+        width:75%;
+       }
 }

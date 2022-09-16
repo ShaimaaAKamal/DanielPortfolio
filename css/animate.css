@@ -234,8 +234,82 @@
     
     
     
+
     
     
     
 
   }
+
+  @keyframes WebPercentage {
+
+    0%{
+        background-color: var(--siteDark);
+        width:20%;
+
+    }
+    25%{
+        background-color: var(--siteDark);
+        width:30%;
+    }
+    50%{
+        background-color: var(--siteDark);
+        width:50%;
+    }
+    75%{
+        background-color: var(--siteDark);
+        width:70%;
+    }
+    100%{
+        background-color: var(--siteDark);
+        width:95%;
+    }
+}
+@keyframes BRANDAnimation {
+
+    0%{
+        background-color: var(--siteDark);
+        width:20%;
+
+    }
+    25%{
+        background-color: var(--siteDark);
+        width:30%;
+    }
+    50%{
+        background-color: var(--siteDark);
+        width:50%;
+    }
+    75%{
+        background-color: var(--siteDark);
+        width:70%;
+    }
+    100%{
+        background-color: var(--siteDark);
+        width:80%;
+    }
+}
+@keyframes Development {
+
+    0%{
+        background-color: var(--siteDark);
+        width:20%;
+
+    }
+    25%{
+        background-color: var(--siteDark);
+        width:30%;
+    }
+    50%{
+        background-color: var(--siteDark);
+        width:50%;
+    }
+    75%{
+        background-color: var(--siteDark);
+        width:70%;
+    }
+    100%{
+        background-color: var(--siteDark);
+        width:90%;
+    }
+}

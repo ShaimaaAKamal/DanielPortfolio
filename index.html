@@ -12,41 +12,43 @@
     </head>
     <body>
         
-      <nav class="navbar navbar-expand-lg bg-transparent position-absolute top-0 w-100">
-        <div class="container-md">
-                  <a class="navbar-brand" href="#">DANIELS</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars text-white"></i>
-                  </button>
-                  <div class="collapse navbar-collapse collapse1" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                      <li class="nav-item text-center ">
-                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
-                      </li>
-                      <li class="nav-item text-center">
-                        <a class="nav-link" href="#About">About</a>
-                      </li>
-                      <li class="nav-item text-center">
-                        <a class="nav-link" href="#Services">Services</a>
-                      </li>
-                      <li class="nav-item text-center">
-                        <a class="nav-link" href="#Works">Works</a>
-                      </li>
-                      <li class="nav-item text-center">
-                        <a class="nav-link text-center" href="#Clients">Clients</a>
-                      </li>
-                      <li class="nav-item text-center">
-                        <a class="nav-link" href="#Blog">Blog</a>
-                      </li>
-                      <li class="nav-item text-center">
-                        <a class="nav-link" href="#Contact">Contact</a>
-                      </li>
-                    </ul>               
+      <div class="parent position-relative mx-auto">
+        <nav class="navbar navbar-expand-lg bg-transparent position-absolute top-0 w-100">
+          <div class="container-md">
+                    <a class="navbar-brand" href="#">DANIELS</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <i class="fa-solid fa-bars text-white"></i>
+                    </button>
+                    <div class="collapse navbar-collapse collapse1" id="navbarSupportedContent">
+                      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item text-center ">
+                          <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item text-center">
+                          <a class="nav-link" href="#About">About</a>
+                        </li>
+                        <li class="nav-item text-center">
+                          <a class="nav-link" href="#Services">Services</a>
+                        </li>
+                        <li class="nav-item text-center">
+                          <a class="nav-link" href="#Works">Works</a>
+                        </li>
+                        <li class="nav-item text-center">
+                          <a class="nav-link text-center" href="#Clients">Clients</a>
+                        </li>
+                        <li class="nav-item text-center">
+                          <a class="nav-link" href="#Blog">Blog</a>
+                        </li>
+                        <li class="nav-item text-center">
+                          <a class="nav-link" href="#Contact">Contact</a>
+                        </li>
+                      </ul>               
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
 
-      <section id="Home" class="position-relative HomeCaption d-flex justify-content-center align-items-center">
+      <section id="Home" class="position-relative HomeCaption d-flex justify-content-center align-items-center overflow-hidden">
              <div class="HomeCaption text-center">
                   <h1 class="ff-mont fw-bold text-white display-4">Hello</h1>
                   <p class="text-white ff-mont display-3 fw-light ">I Am</p>
@@ -58,6 +60,63 @@
                     <a href="#" class="p-2 me-2 bg-dSite bg-opacity-25 rounded-circle"> <i class="fa-brands fa-youtube text-white fs-8 px-1" aria-hidden="true"></i></a>
                   </div>
              </div>
+      </section>
+
+      <section id="About" class="py-5 my-5">
+        <div class="parent mx-auto">
+          <div class="container-md">
+            <div class="row align-items-center gy-4 gx-5">
+              <div class="col-lg-5">
+                   <div>
+                       <div class="aboutImage position-relative">
+                        <img src="img/hero.jpg" alt="" class="w-100">
+                       </div>
+                   </div>
+              </div>
+              <div class="col-lg-7">
+                   <div> 
+                        <h2 class="text-site ff-mont fw-bold">About Me.</h2>
+                        <p class="text-gray ff-mont small">
+                        UI / UX DESIGNER & WEB DEVELOPER
+                        </p>
+                        <p class="ff-mont text-dGray">
+                          I am <span class="fw-bold mb-5">Jerry Daniels</span> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever It has survived not only five centuries, but also the leap into electronic but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                        </p>
+                     
+                         <!-- <div class="progress position-relative w-100 rounded"></div> -->
+
+                         <div class="progress mb-4">
+                          <div class="progress-bar progress1 rounded" role="progressbar" aria-valuenow="95"
+                          aria-valuemin="0" aria-valuemax="100">
+                            <div class="d-flex justify-content-between text-white align-items-center px-3">
+                                 <span>Web Design</span>
+                                 <span>95%</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="progress mb-4">
+                          <div class="progress-bar progress2 rounded" role="progressbar" aria-valuenow="80"
+                          aria-valuemin="0" aria-valuemax="100">
+                            <div class="d-flex justify-content-between text-white align-items-center px-3">
+                                 <span>Branding</span>
+                                 <span>80%</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="progress mb-2">
+                          <div class="progress-bar progress3 rounded" role="progressbar" aria-valuenow="90"
+                          aria-valuemin="0" aria-valuemax="100">
+                            <div class="d-flex justify-content-between text-white align-items-center px-3">
+                                 <span>Development</span>
+                                 <span>90%</span>
+                            </div>
+                          </div>
+                        </div>
+                   </div>
+              </div>
+            </div>
+         </div>
+        </div>
       </section>
         
         <script src="js/bootstrap.bundle.min.js"></script>

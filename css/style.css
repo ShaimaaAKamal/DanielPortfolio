@@ -4,3 +4,77 @@
     --siteParg:#738182;
     --siteDgray:#F4F4F4;
 }
+
+html{
+    font-family: 'Montserrat','Poppins', sans-serif;
+}
+.navbar-brand{
+    font-family:'Montserrat', sans-serif;
+    font-size:1.125rem;
+    line-height: 1.625rem;
+    color:#fff;
+}
+
+.nav-link{
+    font-family:'Poppins', sans-serif; ;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color:var(--siteDark) !important;
+}
+
+.nav-link.active{
+    border-bottom:1px solid #fff;
+}
+
+.nav-item{
+  padding:.3rem;
+}
+
+ .nav-link {
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+}
+
+.collapse1{
+    margin-left:-12px;
+    margin-right:-12px;
+    background-color: #fff;
+    padding:1rem;
+}
+
+@media screen and (min-width: 768px){
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+    .collapse1{
+        margin-left:0;
+        margin-right:0;
+        background-color: transparent;
+        padding:0;
+    }
+
+
+    .nav-link{
+        color:#fff !important;
+    }
+    .nav-item{
+        padding:.8rem .6rem;
+      }
+      
+}
+
+
+@media screen and (min-width: 992px){
+    .nav-item{
+        padding:1.2rem;
+      
+}
+}

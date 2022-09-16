@@ -15,6 +15,10 @@ html{
     width:100%;
 }
 
+.bg-gray{
+    background-color: var(--siteGray);
+}
+
 .ff-mont{
     font-family:'Montserrat', sans-serif;
 }
@@ -48,7 +52,7 @@ html{
 
 /* Nav Section */
 nav{
-    z-index:2;
+    z-index:3;
 }
 .navbar-brand{
     font-family:'Montserrat', sans-serif;
@@ -107,12 +111,10 @@ nav{
     }
     .aboutImage::before{
         content: "";
-        /* width:6%; */
         width:30px;
         height:80%;
         background-image: url("../img/dots.png");
         position: absolute;
-        /* left:-7%; */
         left:-35px;
         top:22%;
     }
@@ -121,10 +123,8 @@ nav{
         content: "";
         width:85%;
         height: 30px;
-        /* height:6%; */
         background-image: url("../img/dots.png");
         position: absolute;
-        /* left:-7%; */
         left:-35px;
         top:102%;
     }
@@ -135,7 +135,7 @@ nav{
         background-color: var(--siteBlack);
         animation-fill-mode: forwards;
         animation-duration: .3s;
-        animation-delay: .5s;
+        animation-delay: .3s;
     }
 
     .progress1{
@@ -153,10 +153,19 @@ nav{
         color:var(--siteBlack) !important;
     }
 
-    .btn2:hover{
+    .btn2:hover,.service:hover i{
         background-color: var(--siteBlack)!important;
         color:#fff !important;
     }
+
+        /* About section */
+        /* Servcies section */
+
+   .section-title{
+    border-bottom:1px dashed #E5E4E5;
+   }
+
+        /* Servcies section */
 
 
 

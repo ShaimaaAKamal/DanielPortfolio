@@ -1,4 +1,4 @@
-#Home::before,#Home::after{
+#Home::before,#Home::after,#About::after,#About::before{
     content:"";
     background-color: #fff;
     width:100%;
@@ -6,14 +6,15 @@
     position:absolute;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+    z-index:2
 
   }
-  #Home::before{
+  #Home::before,#About::before{
       animation-name: HomeUP;
       top:0;
     }
 
-  #Home::after{
+  #Home::after,#About::after{
       animation-name: HomeDown;
       bottom:0;
     }

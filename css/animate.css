@@ -1,4 +1,4 @@
-#Home::before,#Home::after,#About::after,#About::before{
+#Home::before,#Home::after,#About::after,#About::before,#Services::before,#Services::after{
     content:"";
     background-color: #fff;
     width:100%;
@@ -9,12 +9,12 @@
     z-index:2
 
   }
-  #Home::before,#About::before{
+  #Home::before,#About::before,#Services::before{
       animation-name: HomeUP;
       top:0;
     }
 
-  #Home::after,#About::after{
+  #Home::after,#About::after,#Services::after{
       animation-name: HomeDown;
       bottom:0;
     }

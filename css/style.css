@@ -20,7 +20,7 @@ html{
 }
 
 .ff-mont{
-    font-family:'Montserrat', sans-serif;
+    font-family:'Montserrat', sans-serif !important;
 }
 
 .text-dGray{
@@ -41,6 +41,9 @@ html{
 
 .fs-8{
     font-size:.8rem;
+}
+.fs-10{
+    font-size:.7rem;
 }
 
 .text-site{
@@ -165,11 +168,56 @@ nav{
     border-bottom:1px dashed #E5E4E5;
    }
 
+
+
         /* Servcies section */
 
+        #Works .nav-tabs {
+            --bs-nav-tabs-border-width: 0;
+        } 
 
+        #Works .nav-tabs .nav-link{
+            color:var(--siteBlack)!important;
+        }
+        .nav{
+            justify-content: center;
+        }
+        .nav-tabs .nav-link.active{
+            background-color: transparent;
+            border-color: var(--siteBlack) ;
+            border-width:none none 4px;
+        }
 
+        #Works .nav-link{
+            margin-right:2rem;
+        }
 
+        .portfolioBorder{
+            border:5px solid #D6D4D5 
+        }
+        .work{
+            opacity: 0;
+            transform: translateY(5%);
+            transition: all 1s;
+        }
+        .workLink{
+            transform: translateY(50%);
+            transition: all 1s;
+            transition-delay: .2s;
+
+        }
+        .workTitle{
+            transform: translateY(-50%);
+            transition: all 1s;
+            transition-delay: .2s;
+        }
+       .workCard:hover .work{
+        opacity: 1;
+        transform: translateY(0);
+       }
+       .workCard:hover .workLink,.workCard:hover .workTitle{
+         transform: translateY(0);
+       }
  
 
 

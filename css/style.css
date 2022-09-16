@@ -228,6 +228,37 @@ nav{
         margin-left:.5rem
        }
 
+       .status h2::after{
+        font-weight: bold;
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        animation-fill-mode: forwards;
+        animation-duration: .5s;
+        animation-delay: .3s;
+       }
+
+       .status1 h2::after{
+        content:"110";
+        animation-name:HappyCustomers;
+       }
+       .status2 h2::after{
+        content:"20";
+        animation-name:CompleteProjects;
+       }
+       .status3 h2::after{
+        content:"1000";
+        animation-name:Lines;
+       }
+       .status4 h2::after{
+        content:"100";
+        animation-name:Downloaded;
+       }
+      
+     
+
+
+
 
 @media screen and (min-width: 768px){
 

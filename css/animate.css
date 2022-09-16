@@ -314,3 +314,154 @@
         width:90%;
     }
 }
+
+@keyframes HappyCustomers {
+    0%{
+      content:"110"
+    }
+    10%{
+      content:"200"
+    }
+    20%{
+        content:"250"
+    }
+    30%{
+        content:"360"
+    }
+    40%{
+        content:"420"
+    }
+    50%{
+        content:"480"
+    }
+    60%{
+        content:"550"
+    }
+    70%{
+        content:"600"
+    }
+    80%{
+        content:"680"
+    }
+    90%{
+        content:"770"
+    }
+    100%{
+        content:"850"
+    }
+
+
+
+   }
+   @keyframes CompleteProjects {
+    0%{
+      content:"20"
+    }
+    10%{
+      content:"40"
+    }
+    20%{
+        content:"60"
+    }
+    30%{
+        content:"80"
+    }
+    40%{
+        content:"90"
+    }
+    50%{
+        content:"100"
+    }
+    60%{
+        content:"130"
+    }
+    70%{
+        content:"160"
+    }
+    80%{
+        content:"190"
+    }
+    90%{
+        content:"210"
+    }
+    100%{
+        content:"230"
+    }
+
+
+
+   }
+   @keyframes Lines {
+    0%{
+      content:"1000"
+    }
+    10%{
+      content:"2201"
+    }
+    20%{
+        content:"3023"
+    }
+    30%{
+        content:"4637"
+    }
+    40%{
+        content:"5000"
+    }
+    50%{
+        content:"5638"
+    }
+    60%{
+        content:"6003"
+    }
+    70%{
+        content:"7360"
+    }
+    80%{
+        content:"8390"
+    }
+    90%{
+        content:"9200"
+    }
+    100%{
+        content:"9450"
+    }
+
+
+
+   }
+   @keyframes Downloaded {
+    0%{
+      content:"100"
+    }
+    10%{
+      content:"145"
+    }
+    20%{
+        content:"200"
+    }
+    30%{
+        content:"267"
+    }
+    40%{
+        content:"320"
+    }
+    50%{
+        content:"380"
+    }
+    60%{
+        content:"490"
+    }
+    70%{
+        content:"530"
+    }
+    80%{
+        content:"600"
+    }
+    90%{
+        content:"678"
+    }
+    100%{
+        content:"750"
+    }
+
+   }

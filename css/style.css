@@ -4,6 +4,7 @@
     --siteParg:#738182;
     --siteDgray:#F4F4F4;
     --darkgray:#748082;
+    --siteBlack:#1C1C1C;
 }
 
 html{
@@ -20,6 +21,14 @@ html{
 
 .text-dGray{
     color:var(--darkgray);
+}
+
+.text-black{
+    color:var(--siteBlack);
+}
+
+.bg-black{
+    background-color: var(--siteBlack);
 }
 
 .bg-dSite{
@@ -123,9 +132,9 @@ nav{
         --bs-progress-height: 1.5rem;
     }
     .progress-bar{
-        background-color: var(--siteDark);
+        background-color: var(--siteBlack);
         animation-fill-mode: forwards;
-        animation-duration: .1s;
+        animation-duration: .3s;
         animation-delay: .5s;
     }
 
@@ -139,6 +148,15 @@ nav{
         animation-name:Development ;
     }
 
+    .btn1:hover{
+        background-color: #fff !important;
+        color:var(--siteBlack) !important;
+    }
+
+    .btn2:hover{
+        background-color: var(--siteBlack)!important;
+        color:#fff !important;
+    }
 
 
 
@@ -190,9 +208,10 @@ nav{
 
 @media screen and (min-width: 992px){
 
-   .parent{
-    width:90%;
-   }
+    .parent{
+        width:90%;
+       }
+
     /* Nav Section */
     .nav-item{
         padding:1.2rem;

@@ -1,4 +1,4 @@
-#Home::before,#Home::after,#About::after,#About::before,#Services::before,#Services::after{
+#Home::before,#Home::after,#About::after,#About::before,#Services::before,#Services::after,#Works::after,#Works::before{
     content:"";
     background-color: #fff;
     width:100%;
@@ -6,15 +6,15 @@
     position:absolute;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    z-index:2
+    z-index:2;
 
   }
-  #Home::before,#About::before,#Services::before{
+  #Home::before,#About::before,#Services::before,#Works::before{
       animation-name: HomeUP;
       top:0;
     }
 
-  #Home::after,#About::after,#Services::after{
+  #Home::after,#About::after,#Services::after,#Works::after{
       animation-name: HomeDown;
       bottom:0;
     }

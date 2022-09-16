@@ -195,6 +195,7 @@ nav{
         .portfolioBorder{
             border:5px solid #D6D4D5 
         }
+       
         .work{
             opacity: 0;
             transform: translateY(5%);
@@ -219,6 +220,13 @@ nav{
          transform: translateY(0);
        }
  
+       .carousel-indicators [data-bs-target]{
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+        background-color: var(--siteParg);
+        margin-left:.5rem
+       }
 
 
 @media screen and (min-width: 768px){

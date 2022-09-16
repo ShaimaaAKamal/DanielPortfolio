@@ -8,6 +8,23 @@
 html{
     font-family: 'Montserrat','Poppins', sans-serif;
 }
+
+.ff-mont{
+    font-family:'Montserrat', sans-serif;
+}
+
+.bg-dSite{
+    background-color: #0F2228;
+}
+
+.fs-8{
+    font-size:.8rem;
+}
+
+/* Nav Section */
+nav{
+    z-index:2;
+}
 .navbar-brand{
     font-family:'Montserrat', sans-serif;
     font-size:1.125rem;
@@ -41,8 +58,27 @@ html{
     background-color: #fff;
     padding:1rem;
 }
+    /* Nav Section */
+
+    /* Home Section */
+    #Home{
+         height:100vh;
+         background-image:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)) ,url("../img/bg.jpg");
+         background-size: cover;
+         background-position: center center;
+    }
+    
+  .HomeCaption{
+    padding-bottom:1.5rem;
+  }
+
+
+    /* Home Section */
+
 
 @media screen and (min-width: 768px){
+
+    /* Nav Section */
     .navbar-expand-lg .navbar-toggler {
         display: none;
     }
@@ -68,13 +104,18 @@ html{
     .nav-item{
         padding:.8rem .6rem;
       }
+
+  /* Nav Section */
+
       
 }
 
 
 @media screen and (min-width: 992px){
+    /* Nav Section */
     .nav-item{
         padding:1.2rem;
-      
 }
+    /* Nav Section */
+
 }

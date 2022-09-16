@@ -1,0 +1,241 @@
+#Home::before,#Home::after{
+    content:"";
+    background-color: #fff;
+    width:100%;
+    height: 50vh;
+    position:absolute;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+  }
+  #Home::before{
+      animation-name: HomeUP;
+      top:0;
+    }
+
+  #Home::after{
+      animation-name: HomeDown;
+      bottom:0;
+    }
+
+  @keyframes HomeUP {
+      0%{
+          top:0;
+      }
+      100%{
+          top:-100%;
+          background-color: rgba(255, 255, 255, 0.357);
+      }
+  }
+
+  @keyframes HomeDown {
+      0%{
+          bottom:0;
+      }
+      100%{
+          bottom:-100%;
+          background-color: rgba(255, 255, 255, 0.357);
+      }
+  }
+
+  .HomeCaption P::after{
+    content:" Larry Denials|";
+    font-weight:400;
+    animation-name:DanielInfo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.1s;
+  }
+
+  @keyframes DanielInfo {
+    0%{
+        content:" Larry Denials|";
+    }
+    1.5%{
+        content:" Larry Denial|";
+    }
+    3%{
+        content:" Larry Denia|";
+    }
+    4.5%{
+        content:" Larry Deni|";
+    }
+    6%{
+        content:" Larry Den|";
+    }
+    7.5%{
+        content:" Larry De|";
+    }
+    9%{
+        content:" Larry D|";
+    }
+    10.5%{
+        content:" Larry |";
+    }
+    12%{
+        content:" Larry|";
+    }
+    13.5%{
+        content:" Larr|";
+    }
+    15%{
+        content:" Lar|";
+    }
+    16.5%{
+        content:" La|";
+    }
+    18%{
+        content:" L|";
+    }
+    19.5%{
+        content:" |";
+    }
+    21%{
+        content:" D|";
+    }
+    22.5%{
+        content:" De|";
+    }
+    24%{
+        content:" Dev|";
+    }
+    25.5%{
+        content:" Deve|";
+    }
+    27%{
+        content:" Devel|";
+    }
+    28.5%{
+        content:" Develo|";
+    }
+    30%{
+        content:" Develop|";
+    }
+    31.5%{
+        content:" Develope|";
+    }
+    33%{
+        content:" Developer|";
+    }
+    34.5%{
+        content:" Develope|";
+    }
+    36%{
+        content:" Develop|";
+    }
+    37.5%{
+        content:" Develo|";
+    }
+    39%{
+        content:" Devel|";
+    }
+    41.5%{
+        content:" Deve|";
+    }
+    43%{
+        content:" Dev|";
+    }
+    44.5%{
+        content:" De|";
+    }
+    46%{
+        content:" D|";
+    }
+    47.5%{
+        content:" |";
+    }
+    49%{
+        content:" D|";
+    }
+    50.5%{
+        content:" De|";
+    }
+    52%{
+        content:" Des|";
+    }
+    53.5%{
+        content:" Desi|";
+    }
+    55%{
+        content:" Desig|";
+    }
+    56.5%{
+        content:" Design|";
+    }
+    58%{
+        content:" Designe|";
+    }
+    59.5%{
+        content:" Designer|";
+    }
+    61%{
+        content:" Designe|";
+    }
+    62.5%{
+        content:" Design|";
+    }
+    64%{
+        content:" Desig|";
+    }
+    66%{
+        content:" Desi|";
+    }
+    68%{
+        content:" Des|";
+    }
+    70%{
+        content:" De|";
+    }
+    72%{
+        content:" D|";
+    }
+    74%{
+        content:" |";
+    }
+    76%{
+        content:" L|";
+    }
+    78%{
+        content:" La|";
+    }
+    80%{
+        content:" Lar|";
+    }
+    82%{
+        content:" Larr|";
+    }
+    84%{
+        content:" Larry|";
+    }
+    86%{
+        content:" Larry |";
+    }
+    88%{
+        content:" Larry D|";
+    }
+    90%{
+        content:" Larry Da|";
+    }
+    92%{
+        content:" Larry Dan|";
+    }
+    94%{
+        content:" Larry Dani|";
+    }
+    96%{
+        content:" Larry Danie|";
+    }
+    98%{
+        content:" Larry Daniel|";
+    }
+    100%{
+        content:" Larry Daniels|";
+    }
+    
+    
+    
+    
+    
+    
+
+  }

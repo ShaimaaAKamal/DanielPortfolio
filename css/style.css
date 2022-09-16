@@ -156,7 +156,7 @@ nav{
         color:var(--siteBlack) !important;
     }
 
-    .btn2:hover,.service:hover i{
+    .btn2:hover,.service:hover i,#Contact i:hover{
         background-color: var(--siteBlack)!important;
         color:#fff !important;
     }

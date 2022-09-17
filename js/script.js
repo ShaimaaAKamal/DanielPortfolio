@@ -20,14 +20,32 @@ $(".blog-carousel").owlCarousel({
     }
 });
 
-
-
 let nav=document.getElementsByClassName("navbar")[0]
 let navLinks=document.querySelectorAll('.navbar-nav .nav-link');
 let navs=document.querySelectorAll('.navbar-nav .nav-link');
 let ul=document.querySelector(".navbar-nav")
 const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+let Home,About,Services,Works,Clients,Blog,Contact;
+
+function resiz(){
+
+     Home=document.getElementById("Home").offsetTop;
+     About=document.getElementById("About").offsetTop ;
+     Services=document.getElementById("Services").offsetTop;
+     Works=document.getElementById("Works").offsetTop;
+     Clients=document.getElementById("Clients").offsetTop;
+     Blog=document.getElementById("Blog").offsetTop;
+     Contact=document.getElementById("Contact").offsetTop;
+}
+
+resiz();
+
+
+window.addEventListener('resize',(e)=>{
+    resiz();
+})
+
 
 
 navLinks.forEach((link,i)=>{   
@@ -57,10 +75,47 @@ window.addEventListener('load',(e)=>{
     
 })
 
+function LinkScroll(i,j,link){
+    if(i==j)
+    link.classList.add('active')
+    else
+    link.classList.remove('active')
+}
+
 function HandleScroll(offset){
+    if(offset>=Home && offset <(About-100)){
+        navLinks.forEach((link,i)=>{
+            LinkScroll(i,0,link)
+        })
+    }
+    else if (offset>=(About-100) && offset <(Services-100)){
+        navLinks.forEach((link,i)=>{
+            LinkScroll(i,1,link)
+        })
+    }
+    else if (offset>=(Services-100) && offset <(Works-100)){
+            navLinks.forEach((link,i)=>{
+                LinkScroll(i,2,link)
+            })
+   }
+   else if (offset>=(Works-100) && offset <(Clients-100)){
+    navLinks.forEach((link,i)=>{
+        LinkScroll(i,3,link)
+    })
+}
+else if (offset>=(Clients-100) && offset < (Blog-100)){
+    navLinks.forEach((link,i)=>{
+        LinkScroll(i,4,link)
+    })}
+else if (offset>=(Blog-100) && offset < (Contact -100)){
+        navLinks.forEach((link,i)=>{
+            LinkScroll(i,5,link)
+        })}
+else{
+      navLinks.forEach((link,i)=>{
+    LinkScroll(i,6,link)
+})}
     
-
-
     if(offset >= vh){      
         nav.classList.remove('position-absolute','text-white');
         ul.classList.remove('text-links')

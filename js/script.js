@@ -20,11 +20,31 @@ $(".blog-carousel").owlCarousel({
     }
 });
 
+
+
 let nav=document.getElementsByClassName("navbar")[0]
-let activeLink=document.querySelectorAll('.navbar .nav-link.active')[0]
+let navLinks=document.querySelectorAll('.navbar-nav .nav-link');
+let navs=document.querySelectorAll('.navbar-nav .nav-link');
 let ul=document.querySelector(".navbar-nav")
 const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+
+
+navLinks.forEach((link,i)=>{   
+    link.addEventListener('click',(e)=>{
+        navs.forEach((li,j)=>{
+            if(i == j)
+            {   
+                li.classList.add('active');
+            }
+            else
+            {   
+                li.classList.remove('active');
+            }
+        })
+    })
+})
+
 window.addEventListener('scroll',(e)=>{
     let offset=window.pageYOffset;
     HandleScroll(offset);
@@ -38,10 +58,14 @@ window.addEventListener('load',(e)=>{
 })
 
 function HandleScroll(offset){
+    
+
+
     if(offset >= vh){      
         nav.classList.remove('position-absolute','text-white');
         ul.classList.remove('text-links')
         nav.classList.add("fixedNav","shadow-sm");
+        let activeLink=document.querySelectorAll('.navbar .nav-link.active')[0]
         activeLink.classList.remove("activeLinkWhite");
         activeLink.classList.add('activeLinkBlack');
     }
@@ -49,8 +73,10 @@ function HandleScroll(offset){
         nav.classList.remove("fixedNav","shadow-sm");
         ul.classList.add('text-links')
         nav.classList.add('position-absolute','text-white');
+        let activeLink=document.querySelectorAll('.navbar .nav-link.active')[0]
         activeLink.classList.remove("activeLinkBlack");
         activeLink.classList.add('activeLinkWhite');
 
     }
 }
+

@@ -68,11 +68,12 @@ left:0;
 color:var(--siteBlack) !important;
 }
 
+
 .activeLinkBlack{
-    border-bottom:1px solid var(--siteBlack) !important;
+    border-Color:var(--siteBlack) !important;
 }
 .activeLinkWhite{
-    border-bottom:1px solid #fff !important;
+    border-color:#fff !important;
 }
 .navbar-brand{
     font-size:1.125rem;
@@ -91,7 +92,7 @@ color:var(--siteBlack) !important;
 }
 
 .nav-link.active{
-    border-bottom:1px solid #fff;
+    border-bottom:1px solid var(--siteBlack);
 }
 
 .nav-item{
@@ -368,6 +369,10 @@ color:var(--siteBlack) !important;
     .nav-item{
         padding:.8rem .6rem;
       }
+
+      .nav-link.active{
+        border-bottom:1px solid #fff;
+    }
 
   /* Nav Section */
   /* about Section */

@@ -1,23 +1,25 @@
-#Home::before,#Home::after,#About::after,#About::before,#Services::before,#Services::after,#Works::after,#Works::before{
-    content:"";
-    background-color: #fff;
-    width:100%;
-    height: 50vh;
-    position:absolute;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    z-index:2;
 
-  }
-  #Home::before,#About::before,#Services::before,#Works::before{
-      animation-name: HomeUP;
-      top:0;
+    .OnLoadUP,.OnLoadDown{
+        background-color: #fff;
+        width:100%;
+        height: 50vh;
+        position:fixed;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        z-index:10;
     }
 
-  #Home::after,#About::after,#Services::after,#Works::after{
-      animation-name: HomeDown;
-      bottom:0;
+    .OnLoadUP{
+        animation-name: HomeUP;
+         top:0;
     }
+
+    .OnLoadDown{
+        animation-name: HomeDown;
+        bottom:0;
+    }
+
+  
 
   @keyframes HomeUP {
       0%{
@@ -26,6 +28,7 @@
       100%{
           top:-100%;
           background-color: rgba(255, 255, 255, 0.357);
+          z-index:-1
       }
   }
 
@@ -36,6 +39,7 @@
       100%{
           bottom:-100%;
           background-color: rgba(255, 255, 255, 0.357);
+          z-index:-1
       }
   }
 

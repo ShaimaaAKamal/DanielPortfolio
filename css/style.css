@@ -46,6 +46,10 @@ html{
     font-size:.7rem;
 }
 
+.w-15{
+    width:20%;
+}
+
 .text-site{
     color:var(--siteDark);
 }
@@ -343,6 +347,11 @@ nav{
     .owl-item{
            width:calc(100%/2);  
                 }
+    
+    .w-15{
+      width:18%;
+       }
+                
 }
 
 
@@ -371,4 +380,7 @@ nav{
     .parent{
         width:75%;
        }
+       .w-15{
+        width:15%;
+         }
 }

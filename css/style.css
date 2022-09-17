@@ -176,6 +176,9 @@ nav{
 
         /* Servcies section */
 
+       /* Portfolio section */
+
+
         #Works .nav-tabs {
             --bs-nav-tabs-border-width: 0;
         } 
@@ -223,6 +226,9 @@ nav{
        .workCard:hover .workLink,.workCard:hover .workTitle{
          transform: translateY(0);
        }
+
+        /* Portfolio section */
+         /* Testmonial section */
  
        .carousel-indicators [data-bs-target]{
         width:10px;
@@ -258,7 +264,9 @@ nav{
         content:"100";
         animation-name:Downloaded;
        }
-      
+       /* Testmonial section */
+       /* Blog section */
+
      
        .owl-item{
         width:calc(100%);
@@ -295,6 +303,9 @@ nav{
         transform: scale(1.2);
     }
 
+     /* Blog section */
+    /* Contact section */
+
 
 .form-control:focus {
     color:var(--siteDark);
@@ -303,6 +314,9 @@ nav{
     outline: 0;
     box-shadow: none
 }
+
+    /* Contact section */
+
 
 
 
@@ -340,17 +354,18 @@ nav{
       }
 
   /* Nav Section */
+  /* about Section */
  
     .aboutImage{
             width:90%;
                 }
+  /* Nav Section */
+  /* Blog Section */
     .owl-item{
            width:calc(100%/2);  
                 }
     
-    .w-15{
-      width:18%;
-       }
+/* Blog Section */
                 
 }
 
@@ -365,14 +380,20 @@ nav{
     .nav-item{
         padding:1.2rem;
 }
+  /* Nav Section */
+  /* About Section */
     .aboutImage{
             width:100%;
                 }
+    /* About Section */
+    /* Blog Section */
 
     .owl-item{
         width:calc(100%/3);    
          }
-    /* Nav Section */
+    
+    /* Blog Section */
+
 
 }
 
@@ -380,7 +401,5 @@ nav{
     .parent{
         width:75%;
        }
-       .w-15{
-        width:15%;
-         }
+      
 }

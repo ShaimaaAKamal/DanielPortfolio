@@ -26,7 +26,19 @@ let ul=document.querySelector(".navbar-nav")
 const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 window.addEventListener('scroll',(e)=>{
-    if(window.pageYOffset >= vh){      
+    let offset=window.pageYOffset;
+    HandleScroll(offset);
+    window.localStorage.setItem('offset', JSON.stringify(offset));
+})
+
+window.addEventListener('load',(e)=>{
+   let offset= JSON.parse(window.localStorage.getItem('offset'));
+   HandleScroll(offset)
+    
+})
+
+function HandleScroll(offset){
+    if(offset >= vh){      
         nav.classList.remove('position-absolute','text-white');
         ul.classList.remove('text-links')
         nav.classList.add("fixedNav","shadow-sm");
@@ -41,5 +53,4 @@ window.addEventListener('scroll',(e)=>{
         activeLink.classList.add('activeLinkWhite');
 
     }
-})
-
+}

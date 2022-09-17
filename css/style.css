@@ -292,6 +292,14 @@ nav{
     }
 
 
+.form-control:focus {
+    color:var(--siteDark);
+    background-color: var(--siteGray);
+    border-color: none;
+    outline: 0;
+    box-shadow: none
+}
+
 
 
 @media screen and (min-width: 768px){
